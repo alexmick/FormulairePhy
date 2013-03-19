@@ -1,0 +1,54 @@
+\chapitre{Opérateurs différentiels}
+\titre{Opérateur gradient}
+\[\D{U} = \grad{U} \cdot \overrightarrow{\D{l}} \]
+\[\grad{U} = \left(
+\begin{array}{c}
+	\partd{U}{x} \\
+	\partd{U}{y} \\
+	\partd{U}{z}
+\end{array} \right) \hspace{2cm}
+\grad{U} = \left(
+\begin{array}{c}
+	\partd{U}{r} \\
+	\frac{1}{r}\,\partd{U}{\theta} \\
+	\partd{U}{z}
+\end{array} \right) \hspace{2cm}
+\grad{U} = \left(
+\begin{array}{c}
+	\partd{U}{r} \\
+	\frac{1}{r}\partd{U}{\theta} \\
+	\frac{1}{r\,\sin\theta}\partd{U}{\varphi}
+\end{array} \right)
+\]
+\[\grad{U} = \vec{\nabla}U\ \ \text{où (en cartésiennes)} \ \vec{\nabla}=\left(
+\begin{array}{c}
+	\partd{}{x} \\
+	\partd{}{y} \\
+	\partd{}{z}
+\end{array} \right)
+\]
+\[ \text{Formule du gradient: } \oiint_{(\Sigma)}U(M,t)\overrightarrow{\D{S}} = \iiint_{(V)}\grad{U(M,t)}\D{\tau} \]
+\titre{Opérateur divergence}
+\[ \oiint_{(\Sigma)}\vec{a}(M,t)\cdot \overrightarrow{\diff S} = \iiint_{(V)}\div{\vec{a}(M,t)}\diff \tau \ ,\forall V \]
+\[\div{\vec{a}}=\partd{a_x}{x}+\partd{a_y}{y}+\partd{a_z}{z}\]
+\[\div{\vec{a}}= \vec{\nabla} \cdot \vec{a}\]
+\titre{Opérateur rotationnel}
+\[\oint_{(\mathscr{C})}\vec{a}(M,t) \cdot \overrightarrow{\D{l}} = \iint_{(\mathscr{S})}\rot{\vec{a}(M,t)} \cdot \overrightarrow{\D{S}} \]
+\[\rot{\vec{a}} = \vec{\nabla} \wedge \vec{a}\]
+\titre{Opérateur laplacien}
+\[ \Delta U = \div{\left(\grad{U}\right)} \hspace{1cm} \vec{\Delta}\vec{a}=\grad{\left(\div{\vec{a}}\right)}-\rot{\left(\rot{\vec{a}}\right)}=\nabla^2\vec{a}\]
+\[\text{En cartésiennes: }\Delta U=\nabla^2 U= \partd{^2U}{x^2}+\partd{^2U}{y^2}+\partd{^2U}{z^2} \hspace{1cm} \vec{\Delta}\vec{a}
+\left(
+\begin{array}{c}
+	\Delta a_x \\
+	\Delta a_y \\
+	\Delta a_z
+\end{array}
+\right) \hspace{1cm}
+\Delta\left( \frac{1}{r} \right) =0\]
+\titre{Quelques formules de calcul}
+\indent $\circledast$ À savoir par coeur:
+\[\rot{\left( \grad{U} \right)} =0 \hspace{15mm} \div{\left( \rot{\vec{a}} \right) =0} \hspace{15mm} \rot{\left( \rot{\vec{a}} \right)}=\grad{\left( \div{\vec{a}} \right)}-\vec{\Delta}\vec{a}\]
+\indent $\circledast$ À savoir retrouver:
+\[\grad{(U\;V)}=U\:\grad{V}+V\:\grad{U} \hspace{15mm} \div{(\vec{a}\wedge\vec{b})}=\vec{b}\cdot\rot{\vec{a}}-\vec{a}\cdot\rot{\vec{b}}
+\]

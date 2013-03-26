@@ -1,7 +1,7 @@
 \chapitre{Thermodynamique}
 \titre{Statique des fluides}
-\indent $\circledast$ Relation fondamentale de la statique des fluides et applications:
-\[\overrightarrow{\D f} = -P \overrightarrow{\D S}
+\indent $\circledast$ Relation fondamentale de la statique des fluides et applications: \emph{(Signes à adapter)}
+\[\overrightarrow{\D f_p} = -P \overrightarrow{\D S}
 \hspace{2cm} \frac{\D P}{\D z}=-\rho\:\mathrm{g}
 \hspace{2cm} P(z)=P_0\:\exp\left(\frac{-M_{air}\mathrm{g}\,z}{RT_0}\right) \]
 \indent $\circledast$ Poussée d'\textsc{Archimède}: \hspace{10mm} $\vec{\Pi}=\vec{P_A}=-\rho\,V\,\rm{g}$ \\
@@ -13,7 +13,7 @@
 \[C_V=\left.\partd{U}{T}\right|_V \Leftrightarrow \D U = C_V \D T \hspace{15mm} C_P=\left.\partd{H}{T}\right|_P \Leftrightarrow \D H = C_P \D T \]
 \[C_P-C_V=nR \hspace{15mm} \gamma=\frac{C_P}{C_V} \hspace{15mm} C_V=\frac{nR}{\gamma -1} \hspace{15mm} C_P=\frac{nR\gamma}{\gamma -1}\]
 \titre{Loi de \textsc{Laplace}}
-\[TV^{\gamma -1}=\rm{cste} \hspace{15mm} PV^{\gamma}=\rm{cste'} \hspace{15mm} T^{\gamma}P^{1-\gamma}=\rm{cste''}
+\[TV^{\gamma -1}=\rm{c}\up{ste} \hspace{15mm} PV^{\gamma}=\rm{c}\up{ste'} \hspace{15mm} T^{\gamma}P^{1-\gamma}=\rm{c}\up{ste''}
 \]
 \titre{Fonctions d'état}
 \[ H=U+PV \hspace{15mm} G=H-TS \hspace{15mm} F=U-TS
@@ -21,6 +21,15 @@
 \[\D U=T\D S-P\D V \hspace{10mm} \D H=T\D S +V \D P \hspace{10mm} \D F=-S \D T -P \D V \hspace{10mm} \D G =-S \D T +V \D P
 \]
 \titre{Formule de \textsc{Clapeyron}}
-\[h_2-h_1=T(v_2-v_1)\left(\frac{\D P}{\D T}\right)_{\acute{e}quilibre}\]
+\[h_2-h_1=T(v_2-v_1)\left(\frac{\D P}{\D T}\right)_{\acute{e}q}\]
 \[\underset{0^\circ C}{\text{Glace}}\xrightarrow{334\:\mathrm{kJ}.\mathrm{kg}^{-1}}\underset{0^\circ C}{\text{Eau}}\xrightarrow[donc\ 418\:\mathrm{kJ}.\mathrm{kg}^{-1}]{4.18\:\mathrm{kJ}.\mathrm{kg}^{-1}.K^{-1}}\underset{100^\circ C}{\text{Eau}}\xrightarrow{2260\:\mathrm{kJ}.\mathrm{kg}^{-1}}\underset{100^\circ C}{\text{Vapeur}}
 \]
+\titre{Phénomènes de diffusion}
+\begin{center}
+Loi de \textsc{Stephan}: $\mathcal{P}_{tot} = \sigma\;T^4$ \hspace{15mm} Loi de Wien: $T\;\lambda _{max} \approx 2800\; K.\mu m$ \\
+Loi de conservation: $\partd{e}{t}+\div{\vec{\jmath}}=0$\\
+
+Loi de \textsc{Fick}: $\vec{\jmath}_n=-D\;\grad{C}$ où C en $particules.m^{-3}$ et D en $m^2.s^{-1}$\\
+Loi de \textsc{Fourier}: $\vec{\jmath}_Q=-\lambda\;\grad{T}$ où $\vec{\jmath}_Q$ en $W.m^{-2}$
+\end{center}
+

@@ -29,7 +29,7 @@
 \]
 \[ \text{Formule du gradient: } \oiint_{(\Sigma)}U(M,t)\overrightarrow{\D{S}} = \iiint_{(V)}\grad{U(M,t)}\D{\tau} \]
 \titre{Opérateur divergence}
-\[ \oiint_{(\Sigma)}\vec{a}(M,t)\cdot \overrightarrow{\diff S} = \iiint_{(V)}\div{\vec{a}(M,t)}\diff \tau \ ,\forall V \]
+\[ \oiint_{(\Sigma)}\vec{a}(M,t)\cdot \overrightarrow{\D S} = \iiint_{(V)}\div{\vec{a}(M,t)}\D \tau \ ,\forall V \]
 \[\div{\vec{a}}=\partd{a_x}{x}+\partd{a_y}{y}+\partd{a_z}{z}\]
 \[\div{\vec{a}}= \vec{\nabla} \cdot \vec{a}\]
 \titre{Opérateur rotationnel}
@@ -51,4 +51,7 @@
 \[\rot{\left( \grad{U} \right)} =0 \hspace{15mm} \div{\left( \rot{\vec{a}} \right) =0} \hspace{15mm} \rot{\left( \rot{\vec{a}} \right)}=\grad{\left( \div{\vec{a}} \right)}-\vec{\Delta}\vec{a}\]
 \indent $\circledast$ À savoir retrouver:
 \[\grad{(U\;V)}=U\:\grad{V}+V\:\grad{U} \hspace{15mm} \div{(\vec{a}\wedge\vec{b})}=\vec{b}\cdot\rot{\vec{a}}-\vec{a}\cdot\rot{\vec{b}}
+\]
+\titre{Dérivée particulaire}
+\[ \frac{D\,\vec{a}}{D\,t} = \partd{\vec{a}}{t}+\left(\vec{a}\cdot\grad{}\right)\left(\vec{a}\right) = \partd{\vec{a}}{t}+\grad{\left(\frac{a^2}{2}\right)}-\vec{a}\wedge\rot{\vec{a}}
 \]

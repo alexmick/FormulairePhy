@@ -21,14 +21,16 @@
 %%       Commandes perso
 \newcommand{\chapitre}[1]{\newpage\noindent\huge\underline{$\diamond$\ \textbf{#1}}\normalsize\vspace{5mm}\newline}
 \newcommand{\titre}[1]{\noindent\Large$\bullet$\ \textbf{#1}\normalsize\newline}
-\newcommand{\diff}{\,\mathrm{d}} %l'élément différentiel
+%\newcommand{\diff}{\,\mathrm{d}} %l'élément différentiel
 \newcommand{\partd}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\grad}[1]{\overrightarrow{\mathrm{grad}}#1}
 \newcommand{\rot}[1]{\overrightarrow{\mathrm{rot}}\,#1}
-\renewcommand{\div}[1]{\mathrm{div}#1}
+\renewcommand{\div}[1]{\mathrm{div}\,#1}
+\newcommand{\cste}[1][]{C^{ste#1}}
 
 \begin{document}
 \input{operateurs}
 \input{electromag}
+\input{mecaflu}
 \input{thermo}
 \end{document}

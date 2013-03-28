@@ -1,0 +1,27 @@
+\chapitre{Mécanique des fluides}
+\titre{Statique des fluides}
+\indent $\circledast$ Relation fondamentale de la statique des fluides et applications: \emph{(Signes à adapter)}
+\[\overrightarrow{\D f_p} = -P \overrightarrow{\D S}
+\hspace{15mm} \grad{P}=\overrightarrow{f_{vol}}
+\hspace{15mm} \frac{\D P}{\D z}=-\rho\:\mathrm{g}
+\hspace{15mm} P(z)=P_0\:\exp\left(\frac{-M_{air}\mathrm{g}\,z}{RT_0}\right) \]
+\indent $\circledast$ Poussée d'\textsc{Archimède}: \hspace{10mm} $\vec{\Pi}=\vec{P_A}=-\rho\,V\,\rm{g}$ \\
+\titre{Cinématique des fluides}
+\indent $\circledast$ Conservation de la masse: 
+\[\partd{\rho}{t}+\div{\rho\,\vec{v}}=0 \hspace{10mm}\rho=\cste \ \rightarrow \div{\vec{v}}=0\ \rightarrow \vec{v}\cdot\vec{S}=\cste \]
+\indent $\circledast$ Vecteur tourbillon: \hspace{10mm} $\vec{\Omega}=\frac{1}{2}\rot{\vec{v}}$ \\
+\titre{La viscosité}
+\[\overrightarrow{\D f_{viscosit\acute{e}}}=\eta \frac{\D V_x}{\D y}\D{S}\,\vec{x} \hspace{15mm} \overrightarrow{f_{vol/viscosit\acute{e}}}=\eta\,\Delta \vec{v} \hspace{15mm} \nusl = \frac{\eta}{\rho} \hspace{1em}(m^2.s^{-1})
+\]
+\[ \rho \frac{D\,\vec{v}}{D\,t}=-\grad{P}+\rho\;\vec{g}+\eta\,\Delta\vec{v} \hspace{2em} \textsc{Navier-Stockes}
+\]
+On en déduit: \textsc{Bernouilli} {\scriptsize(permanent, parfait, incompressible, LdC/irrotationnel)}
+\[\rho\frac{v^2}{2}+P+\rho\,g\,z=\cste\]
+\[\overrightarrow{f_{flu\rightarrow sph\grave{e}re}}=-6\pi\eta\, r\, \vec{v}\hspace{10mm}
+\mathrm{Re}=\frac{r v}{\nu} \hspace{10mm}
+\overrightarrow{f_{flu\rightarrow objet}}=\frac{1}{2}\rho\; v^2\, S\; C_x \ \text{(coeff trainée)}
+\]
+\titre{Ondes acoustiques}
+\[ c^2=\frac{1}{\rho_0\chi_S} \hspace{15mm} c=\sqrt{\frac{\gamma R\,T}{M}} \hspace{15mm} P=\mathcal{Z}\,v\hspace{1em} \mathcal{Z}=\rho_0c\]
+\[E=\underbrace{\frac{1}{2}\rho_0v^2}_{\stackrel{\acute{e}nergie}{cin\acute{e}tique}}+\underbrace{\frac{1}{2}\chi_S p^2}_{\stackrel{\acute{e}nergie}{\acute{e}lastique}}
+\]

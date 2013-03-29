@@ -1,4 +1,15 @@
 \chapitre{Mécanique}
+\titre{Mouvement à forces centrales}
+\titre{Réduction du problème à 2 corps}
+\[
+\vec{r}=r\,\vec{e}_r=\overrightarrow{M_1M_2}\hspace{10mm}
+\mu=\frac{m_1\,m_2}{m_1+m_2}\ (masse\ r\acute{e}duite) \hspace{10mm}
+\mu \ddot{\vec{v}}=f_G(r)\vec{e}_r \Rightarrow \vec{r}(t) \left\{
+\begin{array}{c}
+	\vec{r}(t)=\vec{r}_1(t)+\vec{r}_2(t) \\
+	m_1\vec{r}_1(t)+m_2\vec{r}_2(t)
+\end{array} \right.
+\]
 \titre{Cinétique des systèmes matériels}
 \[
 \vec{v}= \left(
@@ -13,7 +24,7 @@
 	r\,\ddot{\theta}+2\dot{r}\,\dot{\theta} \\
 	\ddot{z}
 \end{array} \right) \hspace{20mm}
-\vec{v}=\frac{\D s}{\D t}\;\vec{T} \hspace{10mm} \vec{a}=\vec{a}_T+\vec{a}_N=\frac{\D v}{\D t}\;\vec{T}+\frac{v^2}{R_c}\vec{N}
+\vec{v}=\frac{\D s}{\D t}\;\vec{T} \hspace{10mm} \vec{a}=\vec{a}_T+\vec{a}_N=\frac{\D v}{\D t}\;\vec{T}+\frac{v^2}{\mathbb{R}}\vec{N}
 \]
 \[
 \vec{\sigma}_A=\vec{\sigma}_B+\overrightarrow{AB}\wedge m\,\vec{v}_g\ (\textsc{Varignon}) \hspace{15mm}
@@ -36,7 +47,7 @@ E_c=\mathcal{J}_\Delta\frac{\Omega^2}{2} \hspace{15mm}
 \[
 \mathscr{P}_{glisseur}=\vec{F}\cdot \vec{v}_{pt\ app} \hspace{15mm}
 \mathscr{P}_{couple}=\vec{\Omega}\cdot \vec{\Gamma} \hspace{15mm}
-\delta W_{conserv}=-\D E_p
+\delta W_{conserv}=-\D E_px
 \]
 \[
 \frac{\D E_c}{\D t}=\frac{\delta W_{int}}{\D t}+\frac{\delta W_{ext}}{\D t}=\mathscr{P}_{int}+\mathscr{P}_{ext}

@@ -1,0 +1,43 @@
+\chapitre{Mécanique}
+\titre{Cinétique des systèmes matériels}
+\[
+\vec{v}= \left(
+\begin{array}{c}
+	\dot{r} \\
+	r\,\dot{\theta} \\
+	\dot{z}
+\end{array} \right) \hspace{20mm}
+\vec{a} = \left(
+\begin{array}{c}
+	\ddot{r}-r\,\dot{\theta}^2 \\
+	r\,\ddot{\theta}+2\dot{r}\,\dot{\theta} \\
+	\ddot{z}
+\end{array} \right) \hspace{20mm}
+\vec{v}=\frac{\D s}{\D t}\;\vec{T} \hspace{10mm} \vec{a}=\vec{a}_T+\vec{a}_N=\frac{\D v}{\D t}\;\vec{T}+\frac{v^2}{R_c}\vec{N}
+\]
+\[
+\vec{\sigma}_A=\vec{\sigma}_B+\overrightarrow{AB}\wedge m\,\vec{v}_g\ (\textsc{Varignon}) \hspace{15mm}
+\vec{\sigma}_A=\vec{\sigma}^{\star}+\overrightarrow{AG}\wedge m\,\vec{v}_g \hspace{15mm}
+E_c=E_{c}^{\star}+\frac{1}{2}m\;v_G^2\ (\textsc{König})
+\]
+\titre{Cinématique du solide}
+\[
+\vec{v}_P=\vec{v}_Q+\overrightarrow{PQ}\wedge\vec{\Omega}_\mathcal{S} \hspace{15mm}
+\sigma_\Delta=\mathcal{J}_\Delta\:\Omega \hspace{15mm}
+E_c=\mathcal{J}_\Delta\frac{\Omega^2}{2} \hspace{15mm}
+\overrightarrow{M_A}=\overrightarrow{M_B}+\overrightarrow{BA}\wedge \vec{F}
+\]
+\titre{Lois de \textsc{Coulomb}}
+\[
+\text{Glissement (opposé au mouvement): } \left\|\vec{T}\right\|=f\,\left\|\vec{N}\right\| \hspace{10mm}
+\text{Non glissement: } \left\|\vec{T}\right\|\leq f\,\left\|\vec{N}\right\|
+\]
+\titre{Puissance et travail}
+\[
+\mathscr{P}_{glisseur}=\vec{F}\cdot \vec{v}_{pt\ app} \hspace{15mm}
+\mathscr{P}_{couple}=\vec{\Omega}\cdot \vec{\Gamma} \hspace{15mm}
+\delta W_{conserv}=-\D E_p
+\]
+\[
+\frac{\D E_c}{\D t}=\frac{\delta W_{int}}{\D t}+\frac{\delta W_{ext}}{\D t}=\mathscr{P}_{int}+\mathscr{P}_{ext}
+\]

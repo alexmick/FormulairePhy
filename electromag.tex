@@ -3,8 +3,24 @@
 \[i=C\diff{U_c}{t} \hspace{15mm} q=C\,U \hspace{15mm}U=L\diff{i}{t} \hspace{15mm} e=r\eta\ (\textsc{Thèvenin}\sim\textsc{Norton})
 \]
 Ampli Op: \textbf{Idéal} $\Rightarrow i^\oplus=i^\ominus=0$ et en régime \textbf{linéaire} $\Rightarrow V^\oplus=V^\ominus$ \\
-\[\tau=RC=\frac{L}{R} \hspace{15mm} \mathcal{E}=\frac{1}{2}Li^2=\frac{1}{2}CeE2 \hspace{15mm}\omega_0^2=\frac{1}{L\,C}
+\[\tau=RC=\frac{L}{R} \hspace{15mm} \mathcal{E}=\frac{1}{2}Li^2=\frac{1}{2}CE^2 \hspace{15mm}\omega_0^2=\frac{1}{L\,C}
 \]
+\titre{Filtres}
+\[ x=\frac{\omega}{\omega_c} \hspace{10mm}
+\underline{H}(\jmath \omega)=\frac{\underline{H_0}}{1+\jmath x} \hspace{10mm}
+\underline{H}(\jmath \omega)=\frac{\underline{H_0}\:\jmath x}{1+\jmath x} \hspace{10mm}
+\]
+\[ x=\frac{\omega}{\omega_0} \hspace{10mm}
+\underline{H}(\jmath \omega)=\frac{\underline{H_0}}{1-x^2+\jmath \frac{x}{Q}} \hspace{10mm}
+\underline{H}(\jmath \omega)=\frac{-x^2\:\underline{H_0}}{1-x^2+\jmath \frac{x}{Q}} \hspace{10mm}
+\underline{H}(\jmath \omega)=\frac{\underline{H_0}}{1+\jmath\;Q\left(x-\frac{1}{x}\right)} \hspace{5mm} \Delta x=\frac{1}{Q} 
+\]
+\indent $\circledast$ Résonance si $Q>\frac{1}{\sqrt{2}}$. Si $Q\gg 1 \Rightarrow x_r\simeq 1$ et $\beta=Q$ la surtension de résonance\\
+\titre{Puissance en régime sinusoïdal}
+\[\mathscr{P}_{instant}=U\,i \hspace{10mm}
+\mathscr{P}_{moy}=U_\eff I_\eff \cos \varphi=\Re(\underline{\mathcal{Z}})\; I_\eff^2=\Re(\underline{Y})\; U_\eff^2=
+\]
+\indent $\circledast$ Adaptation d'impédance: $\mathcal{Z}_c=\mathcal{Z}_g^\star$ \\
 \titre{Équations de \textsc{Maxwell}}
 \[\div{\vec{B}(M;t)} = 0 \hspace{2cm} \rot{E(M;t)} = - \frac{\partial \vec{B}}{\partial t}(M;t) \]
 \[\div{\vec{E}(M;t)} = \frac{\rho (M;t)}{\varepsilon _0} \hspace{2cm} \rot{B(M;t)} = \mu _0\,\vec{j}(M;t) + \varepsilon _0 \frac{\partial \vec{E}}{\partial t}(M;t) \]

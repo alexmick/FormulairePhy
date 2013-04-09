@@ -54,12 +54,32 @@ V(r,\theta)=\frac{p\cos\theta}{4\pi\varepsilon_0 r^2} \hspace{10mm}
 Ep=-\vec{p}\cdot \vec{E}_{ext}=\overrightarrow{M}\cdot \vec{B}_{ext}
 \]
 \titre{Loi d'\textsc{Ohm}}
-\[I=\diff{Q}{t}=\iint_\mathcal{S}\vec{j}\cdot \overrightarrow{\D S}  \hspace{10mm}
-\vec{j}=nq\vec{v} \hspace{10mm} \vec{j}=\gamma\vec{E} \hspace{10mm} \rho=\frac{1}{\gamma}\ (\Omegasl.m)
+\[I=\diff{Q}{t}=\iint_\mathcal{S}\vec{j}\cdot \overrightarrow{\D S}  \hspace{15mm}
+\vec{j}=nq\vec{v} \hspace{15mm} \vec{j}=\gamma\vec{E} \hspace{15mm} \rho=\frac{1}{\gamma}\ (\Omegasl.m) %unité Ohm.mètre
+\hspace{10mm} \mathscr{P}_\textsc{Joule}=\vec{j}\cdot \vec{E}=\gamma E^2
+\]\[
+\text{En série: } R=\int \frac{\rho \D l}{S} \hspace{10mm} \text{En parallèle: } G=\int \frac{\gamma \D S}{l} \hspace{5mm}
+\Rightarrow \hspace{3mm} \text{Fil cylindrique: } R= \frac{\rho\; l}{S} 
 \]
+\newpage
 \titre{Équations de \textsc{Maxwell}}
-\[\div{\vec{B}(M;t)} = 0 \hspace{2cm} \rot{E(M;t)} = - \frac{\partial \vec{B}}{\partial t}(M;t) \]
-\[\div{\vec{E}(M;t)} = \frac{\rho (M;t)}{\varepsilon_0} \hspace{2cm} \rot{B(M;t)} = \mu_0\,\vec{j}(M;t) + \varepsilon_0 \frac{\partial \vec{E}}{\partial t}(M;t) \]
+\[\div{\vec{B}(M;t)} = 0 \hspace{2cm} \rot{E(M;t)} = - \frac{\partial \vec{B}}{\partial t}(M;t)
+\]\[
+\div{\vec{E}(M;t)} = \frac{\rho (M;t)}{\varepsilon_0} \hspace{2cm} \rot{B(M;t)} = \mu_0\,\vec{j}(M;t) + \varepsilon_0 \frac{\partial \vec{E}}{\partial t}(M;t)
+\]\[
+\vec{B}=\rot{\vec{A}} \hspace{15mm} \vec{E}=-\partd{\vec{A}}{t}-\grad{V} \hspace{10mm}
+\vec{E}_2-\vec{E}_1=\frac{\sigma}{\varepsilon_0}\vec{n}_{1\rightarrow 2} \hspace{10mm}
+\vec{B}_2-\vec{B}_1=\mu_0 \vec{j}_\mathcal{S}\wedge\vec{n}_{1\rightarrow 2}
+\]\[
+\D \mathscr{P}_\textsc{lorentz}=\vec{j}\cdot \vec{E}\; \D \tau \hspace{10mm}
+\vec{\Pi}=\frac{\vec{E}\wedge\vec{B}}{\mu_0} \hspace{10mm}
+e=\frac{\varepsilon_0}{2} E^2+\frac{1}{2\mu_0}B^2
+\]
+
+\titre{Propagation des OEM}
+\[
+c^2=\frac{1}{\varepsilon_0 \mu_0}
+\]
 \titre{Induction}
 \[
 \vec{E}_m=-\partd{\vec{A}}{t}+\vec{v}_e\wedge\vec{B} \hspace{15mm}

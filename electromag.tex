@@ -21,12 +21,45 @@ Ampli Op: \textbf{Idéal} $\Rightarrow i^\oplus=i^\ominus=0$ et en régime \textbf
 \mathscr{P}_{moy}=U_\eff I_\eff \cos \varphi=\Re(\underline{\mathcal{Z}})\; I_\eff^2=\Re(\underline{Y})\; U_\eff^2=
 \]
 \indent $\circledast$ Adaptation d'impédance: $\mathcal{Z}_c=\mathcal{Z}_g^\star$ \\
-\titre{Electrostatique}
-\[C=\frac{\varepsilon_0 S}{e}
+\titre{Electro \& Magnéto statique}
+\[\vec{E}(M)=\frac{1}{4\pi\varepsilon_0}\iiint\frac{\rho(P)}{PM^2}\vec{u}_{PM}\D\tau\ (\textsc{Gauss}) \hspace{20mm}
+V(M)=\frac{1}{4\pi\varepsilon_0}\iiint\frac{\rho}{r}\D\tau
+\]\[
+\vec{B}(M)=\frac{\mu_0}{4\pi}\int \frac{i\,\overrightarrow{\D l}\wedge \vec{u}_{PM}}{r^2}=
+\frac{\mu_0}{4\pi}\iiint\frac{\vec{j}\wedge \vec{u}_{PM}}{r^2}\ (\textsc{Biot \& Savart})
+\]
+\[
+\Phi_\mathcal{S}(\vec{E})= \frac{Q_{int}}{\varepsilon_0} \hspace{20mm} \Phi_\mathcal{S}(\vec{g})=-4\pi G M_{int} \hspace{20mm}
+\oint_\mathscr{C}{\vec{B}\cdot\overrightarrow{\D l}}=\mu_0 I_{enlac\acute{e}}
+\]
+\[\D \vec{f}_\textsc{Laplace}=i\,\overrightarrow{\D l}\wedge \vec{B}=\vec{j}\D \tau \wedge \vec{B} \hspace{20mm}
+C=\frac{\varepsilon_0 S}{e}
+\]
+\indent $\circledast$ Dipôles:
+\[ \vec{p}=q\,\overrightarrow{NP} \hspace{10mm}
+V(r,\theta)=\frac{p\cos\theta}{4\pi\varepsilon_0 r^2} \hspace{10mm}
+\vec{E}=-\grad{V}=\frac{1}{4\pi\varepsilon_0 r^3} \left(
+\begin{array}{c}
+	2p\cos\theta \\
+	p\sin\theta
+\end{array} \right) \hspace{10mm}
+\vec{\Gamma}=\vec{P}\wedge\vec{E}_{ext}
+\]\[
+\overrightarrow{M}=\vec{S}\,I \hspace{10mm}
+\vec{B}=\frac{\mu_0}{4\pi r^3} \left(
+\begin{array}{c}
+	2M\cos\theta \\
+	M\sin\theta
+\end{array} \right) \hspace{10mm} \vec{\Gamma}=\overrightarrow{M}\wedge\vec{B} \hspace{10mm}
+Ep=-\vec{p}\cdot \vec{E}_{ext}=\overrightarrow{M}\cdot \vec{B}_{ext}
+\]
+\titre{Loi d'\textsc{Ohm}}
+\[I=\diff{Q}{t}=\iint_\mathcal{S}\vec{j}\cdot \overrightarrow{\D S}  \hspace{10mm}
+\vec{j}=nq\vec{v} \hspace{10mm} \vec{j}=\gamma\vec{E} \hspace{10mm} \rho=\frac{1}{\gamma}\ (\Omegasl.m)
 \]
 \titre{Équations de \textsc{Maxwell}}
 \[\div{\vec{B}(M;t)} = 0 \hspace{2cm} \rot{E(M;t)} = - \frac{\partial \vec{B}}{\partial t}(M;t) \]
-\[\div{\vec{E}(M;t)} = \frac{\rho (M;t)}{\varepsilon_0} \hspace{2cm} \rot{B(M;t)} = \mu _0\,\vec{j}(M;t) + \varepsilon _0 \frac{\partial \vec{E}}{\partial t}(M;t) \]
+\[\div{\vec{E}(M;t)} = \frac{\rho (M;t)}{\varepsilon_0} \hspace{2cm} \rot{B(M;t)} = \mu_0\,\vec{j}(M;t) + \varepsilon_0 \frac{\partial \vec{E}}{\partial t}(M;t) \]
 \titre{Induction}
 \[
 \vec{E}_m=-\partd{\vec{A}}{t}+\vec{v}_e\wedge\vec{B} \hspace{15mm}
